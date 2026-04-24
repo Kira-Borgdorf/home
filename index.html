@@ -6,19 +6,19 @@
 <title>Dr. Kira Borgdorf, Trainings für sozioemotionale Kompetenz, Kommunikation und Achtsamkeit</title>
 <meta name="description" content="Trainings, Workshops und Vorträge für Teams in Unternehmen, Hochschulen und Gesundheitseinrichtungen. Wissenschaftlich fundiert, praxisnah und menschlich.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="canonical" href="https://www.kiraborgdorf.de/">
+<link rel="canonical" href="https://kira-borgdorf.github.io/training/">
 <!-- Open Graph -->
 <meta property="og:title" content="Dr. Kira Borgdorf – Trainings für sozioemotionale Kompetenz, Kommunikation und Achtsamkeit">
 <meta property="og:description" content="Trainings, Workshops und Vorträge für Teams in Unternehmen, Hochschulen und Gesundheitseinrichtungen. Wissenschaftlich fundiert, praxisnah und menschlich.">
-<meta property="og:image" content="https://www.kiraborgdorf.de/BorgdorfKira_web-AMU.jpg">
-<meta property="og:url" content="https://www.kiraborgdorf.de/">
+<meta property="og:image" content="https://kira-borgdorf.github.io/training/BorgdorfKira_web-AMU.jpg">
+<meta property="og:url" content="https://kira-borgdorf.github.io/training/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Dr. Kira Borgdorf – Trainings für Teams">
 <meta name="twitter:description" content="Wissenschaftlich fundierte Trainings für sozioemotionale Kompetenz, Kommunikation und Achtsamkeit.">
-<meta name="twitter:image" content="https://www.kiraborgdorf.de/BorgdorfKira_web-AMU.jpg">
+<meta name="twitter:image" content="https://kira-borgdorf.github.io/training/BorgdorfKira_web-AMU.jpg">
 <!-- Structured Data -->
 <script type="application/ld+json">
 {
@@ -26,7 +26,7 @@
   "@type": "ProfessionalService",
   "name": "Dr. Kira Borgdorf",
   "description": "Trainings, Workshops und Vorträge für sozioemotionale Kompetenz, Kommunikation und Achtsamkeit",
-  "url": "https://www.kiraborgdorf.de",
+  "url": "https://https://kira-borgdorf.github.io/training/",
   "email": "kborgdorf@gmail.com",
   "address": {
     "@type": "PostalAddress",
@@ -111,10 +111,8 @@ tailwind.config = {
   .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .fade-in.visible { opacity: 1; transform: translateY(0); }
   .hero-portrait { filter: grayscale(0.15) contrast(0.98); opacity: 0.92; }
-  /* Skip to content */
   .skip-link { position: absolute; top: -100%; left: 1rem; z-index: 100; padding: 0.5rem 1rem; background: #3B4C2B; color: #f4f6f1; border-radius: 0.25rem; font-size: 0.875rem; }
   .skip-link:focus { top: 1rem; }
-  /* Focus styles for keyboard nav */
   a:focus-visible, button:focus-visible { outline: 2px solid #5d7544; outline-offset: 2px; border-radius: 2px; }
 </style>
 </head>
@@ -327,7 +325,7 @@ tailwind.config = {
   </div>
 </section>
 
-<!-- Stimmen (mit wiss. Evaluation als Intro) -->
+<!-- Stimmen -->
 <section id="stimmen" class="py-24 md:py-32 bg-white">
   <div class="max-w-5xl mx-auto px-6">
     <div class="max-w-2xl mx-auto">
@@ -429,16 +427,13 @@ tailwind.config = {
     <!-- Impressum / Datenschutz / Copyright -->
     <div class="mt-12 pt-8 border-t border-forest-600 flex flex-wrap justify-center gap-6 text-forest-300 text-xs">
       <p class="centered">&copy; 2026 Dr. Kira Borgdorf</p>
-      <!-- TODO: Impressum-Seite erstellen und hier verlinken -->
       <a href="impressum.html" class="hover:text-forest-50 transition-colors">Impressum</a>
-      <!-- TODO: Datenschutz-Seite erstellen und hier verlinken -->
       <a href="datenschutz.html" class="hover:text-forest-50 transition-colors">Datenschutz</a>
     </div>
   </div>
 </footer>
 
 <script>
-// Mobile menu
 const menuBtn = document.getElementById('menuBtn');
 const mobileMenu = document.getElementById('mobileMenu');
 menuBtn.addEventListener('click', function() {
@@ -452,7 +447,6 @@ document.querySelectorAll('#mobileMenu a').forEach(function(link) {
     menuBtn.setAttribute('aria-expanded', 'false');
   });
 });
-// Fade-in
 const observer = new IntersectionObserver(function(entries) {
   entries.forEach(function(entry) {
     if (entry.isIntersecting) {
