@@ -7,9 +7,14 @@
 <meta name="robots" content="noindex">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  @font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/cormorant-garamond-400.woff2') format('woff2'); }
+  @font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 500; font-display: swap; src: url('fonts/cormorant-garamond-500.woff2') format('woff2'); }
+  @font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 600; font-display: swap; src: url('fonts/cormorant-garamond-600.woff2') format('woff2'); }
+  @font-face { font-family: 'Source Sans 3'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/source-sans-3-400.woff2') format('woff2'); }
+  @font-face { font-family: 'Source Sans 3'; font-style: normal; font-weight: 500; font-display: swap; src: url('fonts/source-sans-3-500.woff2') format('woff2'); }
+  @font-face { font-family: 'Source Sans 3'; font-style: normal; font-weight: 600; font-display: swap; src: url('fonts/source-sans-3-600.woff2') format('woff2'); }
+</style>
 <script>
 tailwind.config = {
   theme: {
@@ -49,7 +54,7 @@ tailwind.config = {
       <p>
         Dr. Kira Borgdorf<br>
         <!-- TODO: Straße und Hausnummer ergänzen -->
-        Karlsruher Straße 89<br>
+        Karlsruher Str. 89<br>
         <!-- TODO: PLZ und Ort ergänzen -->
         69126 Heidelberg<br>
         Deutschland
